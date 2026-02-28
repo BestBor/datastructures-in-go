@@ -17,17 +17,17 @@ func (s *Stack[T]) Push(element T) {
 	s.items = append(s.items, element)
 }
 
-func (s *Stack[T]) Pop() T {
+func (s *Stack[T]) Pop() (T, bool) {
 
 	if len(s.items) == 0 {
 		var zero T
-		return zero
+		return zero, false
 	}
 
 	l := len(s.items) - 1
 	toRemove := s.items[l]
 	s.items = s.items[:l]
-	return toRemove
+	return toRemove, true
 }
 
 func (s *Stack[T]) Peek() T {
