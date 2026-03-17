@@ -17,14 +17,15 @@ datastructures-in-go/
 ├── go.mod
 ├── README.md
 ├── linkedlist/
-│ ├── linkedlist.go
-│ └── linkedlist_test.go
+│   └── linkedlist.go
 ├── stack/
-│ ├── stack.go
-│ └── stack_test.go
+│   └── stack.go
 ├── queue/
-│ ├── queue.go
-│ └── queue_test.go
+│   └── queue.go
+├── bst/
+│   └── bst.go
+└── trie/
+    └── trie.go
 ```
 
 This organization allows:
@@ -44,9 +45,17 @@ This organization allows:
 
 ---
 
-## 🧪 Tests
+## 📚 Available Structures
 
-Each package includes its own tests using Go’s standard testing package.
+| Structure | Package | Type |
+|---|---|---|
+| Linked List | `linkedlist` | Linear |
+| Stack | `stack` | Linear |
+| Queue | `queue` | Linear |
+| Binary Search Tree | `bst` | Tree |
+| Trie | `trie` | Tree |
+
+## 🧪 Tests
 
 ```bash
 go test ./...
